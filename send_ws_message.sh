@@ -13,6 +13,10 @@
 
 domain=`awk '/^domain/ {print $2}' /etc/resolv.conf`
 
+if [[ $domain == *"comcast"* ]]; then
+  domain="local"
+fi
+
 echo "Sending message..."
 sudo pkill -f "nc "
 
