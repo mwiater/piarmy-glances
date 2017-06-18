@@ -25,7 +25,7 @@ WS_SERVER="piarmy04.${domain}"
 WS_PORT=1880
 
 # The header values to use when performing a websocket handshake.
-HS_GET="/ws/dashing"
+HS_GET="/ws/gpio"
 HS_ORIGIN="http://piarmy04.${domain}"
 HS_HOST="piarmy04"
 
